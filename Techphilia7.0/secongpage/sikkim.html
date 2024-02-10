@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    justify-content: center;
+    
+}
+.navbar a>img{
+    background: transparent;
+    padding: 0.5rem 1rem 0px 1rem;
+}
+
+
+
+.navitemleft{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+}
+
+.navitemleft a{
+    padding: 1.4rem;
+    text-decoration: none;
+    color: #454647;
+    font-weight: bold;
+    
+}
+.navitemleft a:hover{
+    color: #ff6612;
+}
+
+.navitemright{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+}
+
+.navitemright a{
+    text-decoration: none;
+    color: #434344;
+    font-weight: bold;
+}
+
+.maincon{
+    width: 100vw;
+    height: 80vh;
+}
+.imgcon{
+    width: 100vw;
+    position: absolute;
+}
+.imgcon>img{
+    width: 100%;
+}
+.upertextsikkim{
+    width: 50%;
+    position: relative;
+    top: 15rem;
+    left: 7rem;
+    padding-bottom: 1rem;
+}
+
+.upertextsikkim .sikkim{
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.smalltext{
+    width: 50%;
+    position: relative;
+    top: 15rem;
+    left: 7rem;
+}
+
+.smalltext .small{
+    color: #ffffff;
+    font-size: 1.2rem;
+
+}
+
+.lasttext{
+    width: 50%;
+    position: relative;
+    top: 22rem;
+    left: 7rem;
+    padding-bottom: 1rem;
+}
+
+.lasttext .last{
+    color: #ffffff;
+    font-size: 1rem;
+
+}
+
+
+.secondcon{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.wel >p{
+    color: #ff6612;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 6rem;
+    padding-bottom: 3rem;
+}
+
+.boldsikkim>p{
+    padding-left: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333333;
+    padding-bottom: 3rem;
+}
+
+.lastsikkim{
+    width: 90%;
+    line-height: 1.6;
+    text-align: justify;
+}
+.lastsikkim>p{
+    padding-left: 6rem;
+    padding-bottom: 6rem;
+    color: #666666;
+}
+
+.rightpara{
+    width: 50%;
+}
+
+
+.footer2{
+    width: 100vw;
+}
+
+.footercontainer2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.5rem 8rem;
+    align-items: start;
+
+}
+
+.footerdownbox1{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+
+
+
+
+.footerdownbox2{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.pf{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.pf a{
+    text-decoration: none;
+    color: #535353;
+    font-size: 0.8rem;
+    font-weight: 600;  
+    width: 10rem;                                                         
+}
+
+.pf a:hover{
+    color: #e52c51;
+}
+
+.pf p{
+    color: #222222;
+    font-weight: bold;
+}
+
+
+
+.footerdownbox3{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+
+
+.footerdownbox4{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+
+
+
+
+.footerdownbox5{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.footerdownbox6{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.footerdownbox7{
+    width: 10%;
+    padding: 1rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+
+/* third */
+
+.footer3{
+    /* background-color: #efeeed; */
+    width: 100%;
+    padding: 3rem 8rem;
+    padding-left: 15rem;
+    display: flex;
+    align-items: center;
+    
+}
+.footer3item{
+    width: 60%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.footer3item  svg{
+    height: 1.5rem;
+    color: #3a3a37;
+}
+
+.footer3item a{
+    width: 15rem;
+    text-decoration: none;
+    color: #535353;
+    font-size: 0.9rem;
+    font-weight: 600;  
+    width: 10rem;
+    font-weight: 600;
+}
+
+.footer3item a:hover{
+    color: #e52c51;
+}
+
+.footer3item >svg:hover{
+    fill: #e52c51;
+    cursor: pointer;
+
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#"><img src="/logo/inner_logo.png" alt="" /></a>
+
+        <div class="navitemleft">
+          <a href="#">Destinations</a>
+          <a href="#">Holidays</a>
+          <a href="#">Packages</a>
+          <a href="#">Places to Stay</a>
+          <a href="#">Weekend gateway</a>
+        </div>
+
+        <div class="navitemright">
+          <a href="#">Destination Weddings</a>
+          <a href="#">MICE</a>
+          <a href="#">Medical Tourisrm</a>
+        </div>
+      </div>
+
+      <div class="maincon">
+        <div class="imgcon">
+            <img src="/secongpage/pic/sikkim-banner.webp" alt="">
+        </div>
+
+        <div class="upertextsikkim">
+            <p class="sikkim">
+                Sikkim Tour Packages
+            </p>
+        </div>
+
+        <div class="smalltext">
+            <p class="small">
+                Escape to Sikkim for an unforgettable journey.
+            </p>
+        </div>
+
+        <div class="lasttext">
+            <p class="last">
+                Home / Sikkim / Sikkim tour packages
+            </p>
+        </div>
+      </div>
+     
+      <div class="secondcon">
+        <div class="wel">
+            <p>Welcome To</p>
+        </div>
+
+        <div class="boldsikkim">
+            <p>Sikkim Tour Packages</p>
+        </div>
+
+        <div class="lastsikkim">
+            <p>
+                Explore well-crafted Sikkim Tour Packages offered by Tour My India at the best price. Tour My India has a wide range of Sikkim Holiday packages categorized by most popular, duration, and interests, making it easy for you to find the best tourism holiday package that suits your interest. Our Sikkim tours start from 3 Nights 4 days to 15 days long holiday packages, covering the best of sightseeing, tourist places, and activities in Sikkim, North, South, West & East India, that offer a lifetime memorable experience in the lap of Northeast Himalayas. Go through our best of Sikkim itineraries, and avail the best holiday deals on the booking of any of these Sikkim package tours with Tour My India. All our packages are customizable, so if you need any customization as per requirement, we are happy to do it for you.
+            </p>
+        </div>
+
+       
+        <div class="footer2">
+
+            <div class="footercontainer2">
+  
+                <div class="footerdownbox1">
+                    <div class="pf">
+                        <p>NEW YORK</p>
+                        <a href="#">275 7th Ave,</a>
+                        <a href="#">New York, NY 10001</a>
+                    </div>
+                </div>
+  
+  
+                <div class="footerdownbox2">
+  
+                    <div class="pf">
+                        <p>LONDON</p>
+                        <a href="#">First Floor of The</a>
+                        <a href="#">Buckley Building</a>
+                        <a href="#">49 Clerkenwell Green</a>
+                        <a href="#">EC1R 0EB</a>
+                    </div>
+                </div>
+  
+                <div class="footerdownbox3">
+  
+                    <div class="pf">
+                        <p>AMSTERDAM</p>
+                        <a href="#">Vijzelstraat 68</a>
+                        <a href="#">1017 HL Amsterdam</a>
+                        <a href="#">Netherlands</a>
+  
+                    </div>
+                </div>
+  
+                <div class="footerdownbox4">
+  
+                    <div class="pf">
+                        <p>SYDNEY</p>
+                        <a href="#">Level 14</a>
+                        <a href="#">5 Martin Place</a>
+                        <a href="#">Sydney, NSW 2021</a>
+  
+                    </div>
+                </div>
+  
+                <div class="footerdownbox5">
+  
+                    <div class="pf">
+                        <p>TEL AVIV</p>
+                        <a href="#">28 Ben Avigdor St.</a>
+                        <a href="#">Tel Aviv 6721848</a>
+  
+                    </div>
+                </div>
+  
+                <div class="footerdownbox6">
+  
+                    <div class="pf">
+                        <p>BERLIN</p>
+                        <a href="#">Factory Berlin Mitte</a>
+                        <a href="#">Rheinsberger Strasse</a>
+                        <a href="#">76/77</a>
+                        <a href="#">10115, Berlin</a>
+  
+                    </div>
+  
+                </div>
+  
+                <div class="footerdownbox7">
+  
+                    <div class="pf">
+                        <p>LISBON</p>
+                        <a href="#">Avenida Liberdade 36</a>
+                        <a href="#">iso 7, 1250-147</a>
+                        <a href="#">Lisboa, Portugal</a>
+  
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+  
+  
+        <div class="footer3">
+  
+          <div class="footer3item">
+              <a href="#">Security</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Settings</a>
+              <a href="#">Contact Us</a>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120" xml:space="preserve"><switch><g><path d="M60 120C26.9 120 0 93.1 0 60S26.9 0 60 0s60 26.9 60 60-26.9 60-60 60zM60 5C29.7 5 5 29.7 5 60s24.7 55 55 55 55-24.7 55-55S90.3 5 60 5z"/><path d="M60 120c-19.3 0-34.4-26.4-34.4-60S40.7 0 60 0s34.4 26.4 34.4 60-15.1 60-34.4 60zM60 5C43.8 5 30.5 29.7 30.5 60s13.2 55 29.5 55 29.5-24.7 29.5-55S76.2 5 60 5z"/><path d="M12.2 25.6h95.6v5H12.2zM12.2 89.5h95.6v5H12.2zM2.5 57.5h115v5H2.5z"/><path d="M57.5 2.5h5v115h-5z"/></g></switch></svg>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
